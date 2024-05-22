@@ -1,0 +1,48 @@
+.navcontainer{
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.navcontainer .search{
+    border: none;
+}
+.navcontainer .search input {
+    border: none;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    font-size: 20px;
+}
+.navcontainer .search input:active{
+    border: none;
+}
+.favBtn{
+    padding: 5px 5px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+.search span{
+    background-color: #333;
+    padding:20px;    border-bottom: 2px solid #333;
+    color: #fff;cursor: pointer;
+   
+}
+.search span FaSearch{
+    line-height: 20px;
+        border-bottom: 2px solid #333;
+}
+.favBtn button{
+    border: none;
+    background:none;
+    color: #fff;
+    font-size: 20px;
+
+}
+ [placeholder='Search For Photos']{
+    font-size: 20px;
+}

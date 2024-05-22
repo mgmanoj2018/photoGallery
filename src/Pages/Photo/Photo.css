@@ -1,0 +1,82 @@
+main {
+  margin-top: 50px;
+}
+section {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 20px;
+}
+.photo-info-container {
+  display: flex;
+}
+article {
+  position: relative;
+  height: 286px;
+    overflow: hidden;
+    transition: 1s;
+
+}
+article>img {
+  width: 100%;
+}
+article:hover>img{
+    zoom: 2x;
+}
+article:hover .photo-info-container{
+    bottom: 0;
+    height: 50px;
+}
+.photo-info-container {
+  position: absolute;
+  bottom: -80px;
+  background-color: rgba(8, 9, 9, 0.5);
+  width: 100%;
+  display: flex;    
+  justify-content: space-around;
+  color: #fff;
+  transition: .3s;
+}
+.phono-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Favourite-btn{
+    background: none;
+    margin-left: 10px;
+}
+.profile-image{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-top: 5px;
+}
+.photo-info-container .profile-image a{    
+    border-radius: 50%;
+}
+.photo-info-container .profile-image a img{
+    width: 100%;
+    border-radius: 50%;
+}
+.favorite-photo{
+    position: absolute;
+    top: 20px;
+    right: -5px;
+   
+}
+.active{ color:red;}
+AiOutlineLike{
+    font-weight: 700;
+    font-size: 50px;
+}
+.share .share-icon{
+    margin-left: 10px;
+    cursor: pointer;
+}   
+.share .download-icon{
+cursor: pointer;
+}
+.active{color: red;}
