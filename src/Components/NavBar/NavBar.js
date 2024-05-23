@@ -1,30 +1,36 @@
-// import React, { useState } from "react";
+// NavBar.js
+import React, { useState } from "react";
 import "./NavBar.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-const NavBar = ({query,handleSearch}) => {
- 
+
+const NavBar = ({ setSearchQuery }) => {
+  const [input, setInput] = useState('');
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setSearchQuery(input);
+  };
+
   return (
     <div className="navcontainer">
       <div className="logo">
-        <Link to="/">
-         
-          <h2>FOTOFLIX</h2>
-        </Link>
+        <h2>FOTOFLIX</h2>
       </div>
       <form className="search" onSubmit={handleSearch}>
         <input
           type="text"
-          query={query}
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
           placeholder="Search For Photos.."
         />
-        <span>
+        <button type="submit">
           <FaSearch fontSize={30} />
-        </span>
+        </button>
       </form>
       <div className="favBtn">
-        <Link to="/favourites">
-          <button>Favourites</button>
+      <Link to='/favourites' >
+        <button>Favourites</button>
         </Link>
       </div>
     </div>
