@@ -67,6 +67,11 @@ article:hover .photo-info-container{
     right: -5px;
    
 }
+.photo-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .active{ color:red;}
 AiOutlineLike{
     font-weight: 700;

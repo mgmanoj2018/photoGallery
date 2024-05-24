@@ -15,7 +15,7 @@ const NavBar = ({ setSearchQuery }) => {
   return (
     <div className="navcontainer">
       <div className="logo">
-        <h2>FOTOFLIX</h2>
+       <Link to='/'> <h2>FOTOFLIX</h2></Link>
       </div>
       <form className="search" onSubmit={handleSearch}>
         <input
