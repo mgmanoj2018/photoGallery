@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaShare, FaHeart, FaDownload } from "react-icons/fa";
 import { AiOutlineLike } from "react-icons/ai";
 import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 import "./Photo.css";
 
 const Photo = ({ searchQuery, handleFavoritePhoto, favoritePhotos }) => {
@@ -122,3 +123,4 @@ const Photo = ({ searchQuery, handleFavoritePhoto, favoritePhotos }) => {
 };
 
 export default Photo;
+console.log("add")
